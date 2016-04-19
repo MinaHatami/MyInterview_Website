@@ -91,3 +91,65 @@ li a {
 	color: #ff0000;
 	/* text-decoration: none; */
 }
+
+#myModalLabel{
+	font-family: 'AR HERMANN';
+	font-size: 40px;
+	color: white;
+}
+
+.modal-header {
+    border-bottom-width: 0px;
+}
+
+.modal-body {
+    padding-top: 0px;
+	text-align: center;
+}
+
+#requestacallform {
+	margin-top: 50px;
+}
+
+.input-group-addon {
+	background-color: #7b99b7;
+	border: none;
+}
+
+.modal-content {
+	background-color: #2c3e50;
+}
+
+.modal .close {
+	color: white;
+}
+
+.modal-body .btn {
+	background-color: #7b99b7;
+	color: white;
+	font-weight: bold;
+    width: 556px;
+}
+
+#forgetPassword {
+    margin-top: 30px;
+}
+
+ #forgetPassword a, #signUp a{
+	color: white;
+	text-decoration: underline;
+}
+
+#signUp {
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
