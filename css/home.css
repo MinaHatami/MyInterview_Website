@@ -1,10 +1,5 @@
-#body{
-	padding-top: 120px;
-}
- 
 #page {
-	background-color: #bfbfbf;
-    /* margin-top: 80px; */
+	background-color: transparent;
 }
 
 #wantTo a img{
@@ -23,6 +18,8 @@ li a {
 #header-topnav{
     margin-bottom: 0px;
 	padding: 10px;
+	width: 100%;
+	min-width: 100%;
 }
 
 .carousel-inner>.item>img{
@@ -36,7 +33,7 @@ li a {
 	width: 100%;
 }
 
-#wantTo{
+#interviews{
 	margin-bottom: 50px;
 }
 
@@ -54,6 +51,10 @@ li a {
 
 .carousel-control.right, .carousel-control.left{
 	width: 0px;
+}
+
+#theCarousel{
+	margin-bottom: 55px
 }
 
 #fitCarousel{
@@ -86,10 +87,8 @@ li a {
 }
 
 
-.carousel-inner .item .carousel-caption a{
-	/* padding-bottom: 400px; */
+.carousel-caption a , .item .carousel-caption h1{
 	color: #ff0000;
-	/* text-decoration: none; */
 }
 
 #myModalLabel{
@@ -145,10 +144,60 @@ li a {
 }
 
 
+.img-circle {
+	width: 80px;
+	height: 80px;
+	margin: 20px 20px;
+	background-color: white;
+}
+
+/* .container #companies{
+    height: 440px;
+} */
+
+.container #companies div{
+	margin-bottom: 55px;
+}
+
+.container div h1{
+	text-align: center;
+	color: #000; 
+}
+
+.container {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 1349px;
+}
+
+.companieslogo , .lead {
+	margin-left: 40px;
+	margin-right: 40px;
+}
 
 
+.forum.table > tbody > tr > td {
+    vertical-align: middle;
+}
 
+.forum .fa {
+    width: 1em;
+    text-align: center;
+}
 
+.forum.table th.cell-stat {
+    width: 6em;
+}
+
+.forum.table th.cell-stat-2x {
+    width: 14em;
+}
+.parallax-window {
+    min-height: 800px;
+    background: transparent;
+}
 
 
 
