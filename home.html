@@ -13,40 +13,99 @@
 	
 	<body>
 		<div id="page">
-			<header class="container" id="header">
-					
-					<div id="header-topnav" class="navbar navbar-default">
-					
-						<div class="navbar-header">
-							<button class="btn btn-success navbar-toggle collapsed"
-									data-toggle="collapse"
-									data-target="#collapseMenu"><span class="glyphicon glyphicon-chevron-down">
-									</span>
-							</button>
-							
-							<div id="logo">
-								<a href="home.html">
-									<img src="images/interview.png"/>
-								</a>
+		
+		
+		
+			<div>
+				<div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="contactUs">
+					<div class="modal-dialog modal-md">
+									
+					<!-- Modal Content -->
+						<div class="modal-content">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								</div>
+												
+								<div class="modal-body">
+									<div>
+										<p class="modal-title" id="myModalLabel">Contact Us</p>
+									</div>
+									<form id="requestacallform" method="POST" name="requestacallform">
+									
+									<div class="form-group">
+										<div class="input-group">    
+											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											<input id="name" type="text" class="form-control" placeholder="Name" name="name"/>
+										</div>
+									</div>
+													
+									<div class="form-group">
+										<div class="input-group">    
+											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											<input id="email" type="email" class="form-control" placeholder="Email" name="email"/>
+										</div>
+									</div>	
+									
+									<div class="form-group">
+										<div class="input-group" id="message-box">    
+											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											<textarea  cols="60" rows="10" id="message" type="text" class="form-control" placeholder="Message" name="message"></textarea>
+										</div>
+									</div>	
+									
+									<div class="checkbox">
+										<label id="rememberMe"><input type="checkbox"> Remember me</label>
+									</div>
+						
+									<div class="form-group"> 
+										<button type="submit" class="btn btn-default">Submit</button>
+									</div>														
+									</form>
+								</div>
+												
 							</div>
 						</div>
+										
+					</div>
+				</div>
+			</div>
+								
+								
+								
+			<header class="container" id="header">
+					
+				<div id="header-topnav" class="navbar navbar-default">
+					
+					<div class="navbar-header">
+						<button class="btn btn-success navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#collapseMenu"><span class="glyphicon glyphicon-chevron-down"></span>
+						</button>
 							
-						<div class="collapse navbar-collapse" id="collapseMenu" >	
-							<ul class="nav navbar-nav navbar-right">
-								<li class="nav active"><a href="#">Home</a></li>
-								<li class="nav"><a href="#companies">Companies</a></li>
-								<li class="nav"><a href="#interviews">Interviews</a></li>
-								<li class="nav"><a href="contact.html">Contact Us</a></li>
-								<li class="nav"><a href="#about" style="padding-right: 25px;">About</a></li>
-							</ul>
+						<div id="logo">
+							<a href="home.html">
+								<img src="images/interview.png"/>
+							</a>
 						</div>
 					</div>
+							
+					<div class="collapse navbar-collapse" id="collapseMenu" >	
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav active"><a href="#">Home</a></li>
+							<li class="nav"><a href="#companies">Companies</a></li>
+							<li class="nav"><a href="#interviews">Interviews</a></li>
+							<li class="nav"><a  data-toggle="modal" data-target="#contactUs" href="#contactUs">Contact Us</a></li>
+							<li class="nav"><a href="about.html" target="blank">About</a></li>
+						</ul>
+					</div>
+				</div>
 					
 			</header>
 			
+			
 			<section class="container" id="body">
 								
-				<!-- <section id="main"> -->
 				<div id="myCarousel">
 					<div class="row visible-md visible-lg">
 						<div id="fitCarousel" class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
@@ -159,8 +218,6 @@
 					</div>
 				</div>
 				
-				<!-- <hr /> -->
-				
 				<div class="container" id="companies">
 					<div>
 						<h1>Companies</h1>
@@ -196,13 +253,13 @@
 					
 				<div class="container" id="interviews">
 						
-						<div>
-							<h1>Interviews<h1>
-						</div>
+					<div>
+						<h1>Interviews<h1>
+					</div>
 						
 						
 						
-						<div class="container" style="margin-top: 55px">
+					<div class="container" style="margin-top: 55px">
 						  <!-- <div class="page-header page-heading">
 							<h1 class="pull-left">Forums</h1>
 							<ol class="breadcrumb pull-right where-am-i">
@@ -211,10 +268,12 @@
 							</ol>
 							<div class="clearfix"></div>
 						  </div> -->
-						  <div><p class="lead">This is the right place to discuss any ideas, critics, feature requests and all the ideas regarding our website. Please follow the forum rules and always check FAQ before posting to prevent duplicate posts.</p></div>
-						  <table class="table forum table-striped">
-							<thead>
-							  <tr>
+						<div>
+							<p class="lead">This is the right place to discuss any ideas, critics, feature requests and all the ideas regarding our website. Please follow the forum rules and always check FAQ before posting to prevent duplicate posts.</p>
+						</div>
+						<table class="table forum table-striped">
+						<thead>
+							<tr>
 								<th class="cell-stat"></th>
 								<th>
 								  <h3>Company</h3>
@@ -222,10 +281,10 @@
 								<th class="cell-stat text-center hidden-xs hidden-sm">Rate</th>
 								<th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
 								<th class="cell-stat-2x hidden-xs hidden-sm">Last Post</th>
-							  </tr>
-							</thead>
-							<tbody>
-							  <tr>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
 								<td class="text-center"><i class="fa fa-question fa-2x text-primary"></i></td>
 								<td>
 								  <h4><a href="amazon.html">Amazon</a></h4>
@@ -234,7 +293,7 @@
 								<td class="text-center hidden-xs hidden-sm"><a href="#">89 897</a></td>
 								<td class="hidden-xs hidden-sm">by <a href="#">John Doe</a><br><small><i class="fa fa-clock-o"></i> 3 months ago</small></td>
 							  </tr>
-							  <tr>
+							<tr>
 								<td class="text-center"><i class="fa fa-exclamation fa-2x text-danger"></i></td>
 								<td>
 								  <h4><a href="google.html">Google</a></h4>
@@ -242,24 +301,55 @@
 								<td class="text-center hidden-xs hidden-sm"><a href="#">6532</a></td>
 								<td class="text-center hidden-xs hidden-sm"><a href="#">152123</a></td>
 								<td class="hidden-xs hidden-sm">by <a href="#">Jane Doe</a><br><small><i class="fa fa-clock-o"></i> 1 years ago</small></td>
-							  </tr>
-							</tbody>
-						  </table>
+							</tr>
+						</tbody>
+						</table>
 						 
-						</div>
+					</div>
 				</div>
-						
-						
-						
-						
-		</div>
-					
-				<!-- </section> -->
+				
+				
+				<div class="container">
+					<h2>Contact Us</h2>
+					<form role="form">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="name">Name: </label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="name" placeholder="Enter Name">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="email" placeholder="Enter Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="message">Message:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="message">
+							</div>
+						</div>
+						<div class="form-group"> 
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+								  <label  class="control-label col-sm-2" ><input type="checkbox"> Remember me</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group"> 
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-default">Submit</button>
+							</div>
+						</div>	
+					</form>
+				</div>
+				
 				
 			</section>
 			
 			<footer class="container">
-				
+				<div></div>
 			
 			</footer>
 			

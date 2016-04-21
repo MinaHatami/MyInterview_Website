@@ -33,10 +33,6 @@ li a {
 	width: 100%;
 }
 
-#interviews{
-	margin-bottom: 50px;
-}
-
 #body{
 	
     width: 1310px;
@@ -51,10 +47,6 @@ li a {
 
 .carousel-control.right, .carousel-control.left{
 	width: 0px;
-}
-
-#theCarousel{
-	margin-bottom: 55px
 }
 
 #fitCarousel{
@@ -94,7 +86,7 @@ li a {
 #myModalLabel{
 	font-family: 'AR HERMANN';
 	font-size: 40px;
-	color: white;
+	color: #fff;
 }
 
 .modal-header {
@@ -120,26 +112,22 @@ li a {
 }
 
 .modal .close {
-	color: white;
+	color: #fff;
 }
 
 .modal-body .btn {
 	background-color: #7b99b7;
-	color: white;
+	color: #fff;
 	font-weight: bold;
     width: 556px;
 }
 
-#forgetPassword {
-    margin-top: 30px;
-}
-
  #forgetPassword a, #signUp a{
-	color: white;
+	color: #fff;
 	text-decoration: underline;
 }
 
-#signUp {
+#signUp, #forgetPassword {
 	margin-top: 30px;
 }
 
@@ -148,14 +136,14 @@ li a {
 	width: 80px;
 	height: 80px;
 	margin: 20px 20px;
-	background-color: white;
+	background-color: #fff;
 }
 
 /* .container #companies{
     height: 440px;
 } */
 
-.container #companies div{
+.container #companies div, #interviews, #theCarousel{
 	margin-bottom: 55px;
 }
 
@@ -200,5 +188,26 @@ li a {
 }
 
 
+#contactForm {
+	/* text-align:center; */
+	margin-top: 55px;
+}
+
+ .form-input {
+    margin: auto;
+    width: 14%;
+ }
+ 
+ #rememberMe {
+	color: #fff;
+ }
+ 
+ .checkbox {
+	text-align: left;
+ }
+
+.message-box , #message {
+	height: 100px;
+}
 
 
