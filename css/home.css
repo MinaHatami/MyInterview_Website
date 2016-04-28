@@ -69,7 +69,7 @@ li a {
 }
 
 .carousel-control{
-	color: #ff0000;
+	color: #fff;
 	font-size: 100px;
 }
 
@@ -80,7 +80,7 @@ li a {
 
 
 .carousel-caption a , .item .carousel-caption h1{
-	color: #ff0000;
+	color: #fff;
 }
 
 #myModalLabel{
@@ -125,6 +125,8 @@ li a {
  #forgetPassword a, #signUp a{
 	color: #fff;
 	text-decoration: underline;
+	
+	margin-top: 30px;
 }
 
 #signUp, #forgetPassword {
@@ -184,7 +186,7 @@ li a {
     width: 14em;
 }
 .parallax-window {
-    min-height: 800px;
+    min-height: 600px;
     background: transparent;
 	margin-bottom: 0px;
 }
@@ -218,6 +220,23 @@ li a {
     padding-top: 15px;
  }
 
-tr {
+tr , #more{
 	color: #000;
+}
+
+.table a:not(.btn) {
+	text-decoration: none;
+}
+
+
+span.stars, span.stars span {
+    display: block;
+	/* TODO: fix the url*/
+    background: url(../images/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
 }
