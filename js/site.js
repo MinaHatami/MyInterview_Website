@@ -1,36 +1,41 @@
 (function(){
 	"use strict";
-	/* 
-	var $pickbutton = $("#pickbutton");
-	
-	$("#reasonDropdown li a").on("click",function(){
-		var reason = $(this).text();
-		$pickbutton.text(reason);
-	});
-
-	var $sentDialog = $("#sentDialog");
-	
-	$("#contactForm").on("submit",function(){
-		$sentDialog.modal('show');
-		return false;
-	});
-	var $sentAlert = $("#sentAlert");
-	
-	$sentDialog.on("hidden.bs.modal", function(){
-		//alert("close");
-		$sentAlert.show();
-	});
-	$sentAlert.on("close.bs.alert", function(){
-		$sentAlert.hide();
-		return false;
-	});
-	$("contactForm input[type=submit]").tooltip({
-		delay: {
-			show: 500,
-			hide: 0
-		}
-	}); */
 	
 	$("#theCarousel").carousel();
+	
+	function myFunction() {
+    document.getElementById("requestacallform").submit();
+	}
+	
+	/* function closeModal(){
+		$('#signupLink').click(function(){
+			$('#bannerformmodal').modal('hide')
+		});
+	} */
+	
+	$(function() {
+	$('#signupLink').click(function() {
+		$('#signIn').modal('hide');
+	});
+	});
+	
+	$.fn.stars = function() {
+    return $(this).each(function() {
+        // Get the value
+        var val = parseFloat($(this).html());
+        val = Math.round(val * 4) / 4; /* To round to nearest quarter */
+		val = Math.round(val * 2) / 2; /* To round to nearest half */
+		// Make sure that the value is in 0 - 5 range, multiply to get width
+        var size = Math.max(0, (Math.min(5, val))) * 16;
+        // Create stars holder
+        var $span = $('<span />').width(size);
+        // Replace the numerical value with stars
+        $(this).html($span);
+    });
+	}
+	
+	$(function() {
+    $('span.stars').stars();
+});
 
-})();
+})();	
